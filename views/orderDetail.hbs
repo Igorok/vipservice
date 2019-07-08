@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+
+<p>
+    <a href="/orders">Back to orders list</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Номер заказа</th>
+            <th>Локатор</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#orderDetail}}
+        <tr>
+            <td>{{order_id}}</td>
+            <td>{{locator}}</td>
+            <td>{{name_second}}</td>
+            <td>{{name_first}}</td>
+        </tr>
+        {{/orderDetail}}
+    </tbody>
+</table>

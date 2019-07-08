@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Номер заказа</th>
+            <th>Локатор</th>
+            <th>Дата последнего обновления</th>
+            <th>Стоимость в рублях</th>
+            <th>Стоимость в валюте заказа</th>
+            <th>Количество пассажиров</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#orders}}
+        <tr>
+            <td>{{ID}}</td>
+            <td>
+                <a href="/order/{{ID}}">{{locator}}</a>
+            </td>
+            <td>{{date_insert}}</td>
+            <td>{{price_rub}}</td>
+            <td>{{price}}</td>
+            <td>{{count}}</td>
+        </tr>
+        {{/orders}}
+    </tbody>
+</table>

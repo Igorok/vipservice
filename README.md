@@ -13,3 +13,8 @@ npm jasmine-node -g
 ```
 npm test
 ```
+
+### Launch
+```
+npm start
+```
